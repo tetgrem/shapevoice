@@ -24,9 +24,12 @@
 
 // Body Locked
 body {
+    font-family: 'Manrope', sans-serif;
     &.locked {
         overflow: hidden;
     }
+
+    height: 12000px;
 }
 
 // Animations
