@@ -1,0 +1,32 @@
+.companies {
+
+  &__section {
+    margin-top: 100px;
+    position: relative;
+
+    h2 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 30px;
+      text-align: center;
+      color: #000000;
+    }
+  }
+
+  &__row {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: -162px;
+    z-index: -1;
+  }
+}

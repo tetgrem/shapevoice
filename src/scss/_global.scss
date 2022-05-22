@@ -29,7 +29,133 @@ body {
         overflow: hidden;
     }
 
-    height: 12000px;
+    background-color: #fff;
+}
+
+.block__headers {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+
+    h1 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 42px;
+        line-height: 60px;
+        letter-spacing: -0.03em;
+        color: #000000;
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #64607D;
+        max-width: 600px;
+        margin: 13px auto 0 auto;
+    }
+}
+
+.header__form {
+    flex: 0 1 256px;
+    margin-top: 40px;
+
+    @media (max-width: $breakpoint768) {
+        flex: 1 1 100%;
+    }
+
+    h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        color: #3734A9;
+    }
+
+    input[type="email"], input[type="password"] {
+        width: 356px;
+        height: 60px;
+        margin-top: 24px;
+        padding: 16px 22px 14px 22px;
+        background: #FFFFFF;
+        border: 1px solid #DFE4F1;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        color: #64607D;
+        opacity: 0.9;
+
+        &.form {
+            background: rgba(187, 181, 224, 0.2);
+            border: none;
+            color: white;
+
+            &::placeholder {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                letter-spacing: -0.02em;
+                color: #BBB5E0;
+                opacity: 0.4;
+            }
+        }
+
+        @media (max-width: $breakpoint992) {
+            width: 250px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            width: 100%;
+        }
+
+        &::placeholder {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: -0.02em;
+            color: #64607D;
+            opacity: 0.4;
+
+        }
+    }
+
+    input[type="submit"] {
+        margin-top: 24px;
+        width: 356px;
+        height: 60px;
+        text-align: center;
+        background: #FF7F5C;
+        border-radius: 5px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding-top: 5px;
+        cursor: pointer;
+        transition: all .44s ease;
+
+        @media (max-width: $breakpoint992) {
+            width: 250px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            width: 100%;
+        }
+
+        &:hover {
+            background: #f64c19;
+        }
+    }
 }
 
 // Animations
@@ -43,3 +169,5 @@ body {
         opacity: 1;
     }
 }
+
+

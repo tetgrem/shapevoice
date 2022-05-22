@@ -95,6 +95,7 @@
       gap: 40px;
     }
 
+
     a {
       transition: all .44s ease;
 
@@ -138,88 +139,6 @@
           letter-spacing: -0.02em;
           color: #3734A9;
         }
-      }
-    }
-  }
-
-  &__form {
-    flex: 0 1 256px;
-    margin-top: 40px;
-
-    @media (max-width: $breakpoint768) {
-      flex: 1 1 100%;
-    }
-
-    h1 {
-      font-style: normal;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 30px;
-      letter-spacing: -0.02em;
-      color: #3734A9;
-    }
-    
-    input[type="email"], input[type="password"] {
-      width: 356px;
-      height: 60px;
-      margin-top: 24px;
-      padding: 16px 22px 14px 22px;
-      background: #FFFFFF;
-      border: 1px solid #DFE4F1;
-      border-radius: 5px;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 30px;
-      letter-spacing: -0.02em;
-      color: #64607D;
-      opacity: 0.9;
-      
-      @media (max-width: $breakpoint992) {
-        width: 250px;
-      }
-
-      @media (max-width: $breakpoint768) {
-        width: 100%;
-      }
-
-      &::placeholder {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 30px;
-        letter-spacing: -0.02em;
-        color: #64607D;
-        opacity: 0.4;
-      }
-    }
-
-    input[type="submit"] {
-      margin-top: 24px;
-      width: 356px;
-      height: 60px;
-      text-align: center;
-      background: #FF7F5C;
-      border-radius: 5px;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 30px;
-      text-transform: uppercase;
-      color: #FFFFFF;
-      padding-top: 5px;
-      cursor: pointer;
-      transition: all .44s ease;
-
-      @media (max-width: $breakpoint992) {
-        width: 250px;
-      }
-
-      @media (max-width: $breakpoint768) {
-        width: 100%;
-      }
-
-      &:hover {
-        background: #f64c19;
       }
     }
   }
@@ -276,7 +195,6 @@ nav {
 
         @media (max-width: $breakpoint480) {
           display: none;
-
         }
 
         &:hover {
@@ -297,7 +215,6 @@ nav {
         @media (max-width: $breakpoint480) {
           padding: 12px 20px 11px 20px;
         }
-
 
         &:hover {
           background-color: #483bfa;

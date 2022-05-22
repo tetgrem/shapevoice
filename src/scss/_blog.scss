@@ -1,0 +1,155 @@
+.blog {
+
+  &__section {
+    margin-top: 100px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+    @media (max-width: 567px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    h1 {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 42px;
+      line-height: 50px;
+      letter-spacing: -0.03em;
+      color: #000000;
+
+      @media (max-width: 467px) {
+        font-size: 32px;
+      }
+
+      @media (max-width: 367px) {
+        font-size: 28px;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 195px;
+      height: 60px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: #DEE1E6;
+      background: #4F46BA;
+      border-radius: 10px;
+      transition: all .44s ease;
+
+      @media (max-width: 467px) {
+        width: 100%;
+      }
+
+      &:hover {
+        background-color: #483bfa;
+      }
+    }
+  }
+
+  &__block {
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+    @media (max-width: 798px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    flex: 0 1 380px;
+
+    img {
+      @media (max-width: 400px) {
+        width: 100%;
+      }
+    }
+    
+    h3 {
+      margin-top: 11px;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 36px;
+      letter-spacing: -0.03em;
+      color: #000000;
+    }
+
+    p {
+      margin-top: 8px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: -0.02em;
+      color: #64607D;
+    }
+  }
+
+  &__info-row {
+    display: flex;
+    margin-top: 14px;
+    gap: 20px;
+
+    span {
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: -0.02em;
+      color: #64607D;
+    }
+  }
+
+  &__right-col {
+    flex: 0 0 378px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @media (max-width: 1180px) {
+      display: none;
+    }
+  }
+
+  &__right-item {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 26px;
+    border-bottom: 2px solid #DEE1E6;
+
+
+
+    h4 {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: -0.03em;
+      color: #000000;
+    }
+  }
+
+  &__right-info-row {
+    display: flex;
+    gap: 20px;
+
+    span {
+      font-size: 16px;
+
+      letter-spacing: -0.02em;
+      color: #64607D;
+    }
+  }
+}

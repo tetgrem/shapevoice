@@ -5,7 +5,14 @@
 
 // Sections or Pages SCSS-files imports
  @import './header';
-// @import './footer';
+ @import './companies';
+ @import './reasons';
+ @import './why';
+ @import './push';
+ @import './slider';
+ @import './blog';
+ @import './form';
+ @import './footer';
 
 // Libs
-// @import './libs/swiper';
+ @import './libs/swiper';
